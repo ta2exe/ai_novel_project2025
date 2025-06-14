@@ -1,0 +1,39 @@
+# OSごとのゴミ
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# Editor/IDE系
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+.vscode/
+.idea/
+*.code-workspace
+
+# ログ・バックアップ
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# macOS
+.AppleDouble
+
+# その他
+*.env
+.env.*
+*.secret
+*.pem
+*.key
+
+# 個人設定や秘密情報は絶対にコミットしないこと！
