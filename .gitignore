@@ -36,4 +36,14 @@ yarn-error.log
 *.pem
 *.key
 
-# 個人設定や秘密情報は絶対にコミットしないこと！
+# 一時保存・検証用
+temp/
+tmp/
+old/
+backup/
+logs/
+.cache/
+output/
+build/
+dist/
+
