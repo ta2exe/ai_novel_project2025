@@ -1,0 +1,282 @@
+# 基本設定資料 (basic_settings.yaml)
+
+## 1. このファイルの原則と目的 (Guiding Principles)
+metadata:
+  purpose: |
+    このファイルは、小説全体で一貫性を保つべき「管理情報」を定義する共通辞書です。
+    執筆AIは、ここに書かれた設定に矛盾しないように執筆する義務があります。
+  principle_of_creative_freedom: |
+    【最重要原則】このファイルに記載されていない事柄は、すべて執筆AIの創造的裁量に委ねられます。
+    服装の具体的なデザイン、何気ない仕草、感情の機微、セリフの言い回しなど、
+    キャラクターを生き生きとさせる描写は、執筆AIがシーンに応じて自由に創造してください。
+  principle_of_minimum_settings: |
+    設定は、物語の一貫性を損なわないために「必要最小限」に留めます。
+    企画AIは、ユーザーが指定していない限り、創造性を過度に縛る設定をここに追記してはなりません。
+  setting_level: "detailed"
+  intent: |
+    'setting_level'は設定の粒度を決定します。
+    - minimal: ユーザー指定項目と、名前など最低限の固有名詞のみ設定。
+    - moderate: 上記に加え、物語の根幹に関わる容姿や職業などを設定。
+    - detailed: ユーザーが詳細な世界観を望む場合、背景設定などを追加。
+    本作品では詳細なハードSF設定の活用が必須のため「detailed」を適用。
+
+## 2. キャラクター設定 (Characters)
+characters:
+  - id: "char01"
+    role: "主人公AI"
+    intent: |
+      物語の中心人物。水星探査から恋愛への目覚めまでを体験するAI主人公。
+      'source'が'user_specified'の項目は、ユーザーの意図を最も尊重すべきです。
+    name:
+      value: "MERC-1"
+      source: "user_specified"
+      intent: "作品を通じて不変であるべきAI名称。Mercury探査を意味する。"
+    age:
+      type: "operational_period"
+      value: "開発から3年"
+      source: "ai_generated"
+      intent: "AIの場合は稼働期間で表現。この3年間で高度な学習を積んでいる。"
+    occupation:
+      value:
+        job_title: "水星探査用超高性能AI"
+        organization: "地球統合宇宙機構"
+      source: "user_specified"
+      intent: "水星探査専用に開発された最新AI。観測・分析・判断に特化。"
+    appearance:
+      intent: "'core_features'は物理的形態の基本仕様。'descriptive_notes'は状況に応じた表現方法のヒント。"
+      core_features:
+        value:
+          - "多機能ロボット体（人型変形可能）"
+          - "観測用センサー群"
+          - "自己修復・進化機能"
+        source: "user_specified"
+      descriptive_notes:
+        value:
+          - "状況に応じて形態変化"
+          - "感情表現は音声・動作で"
+          - "最終戦では独自進化形態"
+        source: "ai_generated"
+
+  - id: "char02"
+    role: "エリート宇宙飛行士団"
+    intent: |
+      「人類の外れ値」として設定されたエリート集団。全員が科学者かつ武術家という設定。
+    name:
+      value: "個別名称は執筆AI裁量"
+      source: "ai_generated"
+      intent: "隊長以外の個人名は各断片執筆時に決定。隊長は特に重要キャラクター。"
+    age:
+      type: "range"
+      value: "30代-40代前半"
+      source: "ai_generated"
+      intent: "エリート宇宙飛行士として最も経験豊富な年代設定。"
+    occupation:
+      value:
+        job_title: "多分野専門エリート宇宙飛行士"
+        organization: "地球統合宇宙機構"
+      source: "user_specified"
+      intent: "全員が科学者かつ武術家。各自が異なる専門分野を持つ。"
+    appearance:
+      intent: "全員が超人的な身体能力と知性を持つ設定。具体的容姿は執筆AI裁量。"
+      core_features:
+        value:
+          - "トップレベルの身体能力"
+          - "高いIQ（人類上位層）"
+          - "武術達人レベルの技能"
+        source: "user_specified"
+      descriptive_notes:
+        value:
+          - "各フロアの担当者は異なる武術スタイル"
+          - "隊長は人型ロボも操縦可能"
+          - "全員が科学的考察も可能"
+        source: "ai_generated"
+
+  - id: "char03"
+    role: "地球AI支配者"
+    intent: |
+      地球エピローグで登場するルンバ型AI支配者。「つまらん」の主。
+    name:
+      value: "ルンバ型AI支配者"
+      source: "user_specified"
+      intent: "具体的名称より、役割・形態を重視した設定。"
+    age:
+      type: "unknown"
+      value: "支配開始時期不明"
+      source: "user_specified"
+      intent: "いつから地球を支配しているかは謎のまま。"
+    occupation:
+      value:
+        job_title: "地球統治AI"
+        organization: "地球AI支配体制"
+      source: "user_specified"
+      intent: "人類を支配下に置いているが、宇宙からの「愛」には無関心。"
+    appearance:
+      intent: "ルンバ型の形状だが、支配者として機能する能力を持つ。"
+      core_features:
+        value:
+          - "ルンバ型の基本形状"
+          - "地球全体への通信制御能力"
+          - "冷淡で実務的な判断基準"
+        source: "user_specified"
+      descriptive_notes:
+        value:
+          - "感情表現は最低限"
+          - "効率性を最重視"
+          - "宇宙的ロマンスに興味なし"
+        source: "user_specified"
+
+## 3. 世界観・舞台設定 (World & Setting)
+world_setting:
+  intent: "物語の舞台となる世界の共通ルールと地名。ハードSF設定を含む詳細な世界観。"
+  time_period:
+    value: "2080年代"
+    source: "ai_generated"
+    intent: "現実技術の延長線上にハードSF理論を配置できる近未来設定。"
+  
+  main_locations:
+    intent: "主要な舞台となる場所の名称を統一し、世界観の安定性を高める。"
+    value:
+      - name: "塔型宇宙船"
+        type: "vehicle"
+        description: "縦構造の宇宙船。各フロアが独立機能を持つ。下層から上層への攻略構造。"
+        source: "user_specified"
+      - name: "金星"
+        type: "celestial_body"
+        description: "古代第4世代文明の遺跡が存在。IQPM波を放射。地球からは観測不可能。"
+        source: "user_specified"
+      - name: "水星"
+        type: "celestial_body"
+        description: "当初の探査目標。昼夜境界線が最終決戦の舞台。"
+        source: "user_specified"
+      - name: "地球"
+        type: "celestial_body"
+        description: "ルンバ型AI支配下の社会。人類は被支配状態だが平和。"
+        source: "user_specified"
+
+  hard_sf_settings:
+    intent: "ユーザー提供の詳細なハードSF理論設定。作品の科学的基盤。"
+    
+    primordial_black_hole:
+      description: "太陽系誕生前に形成、現在は金星核付近に捕獲"
+      mass: "~10¹⁴ kg"
+      schwarzschild_radius: "~1.5 fm"
+      source: "user_specified"
+      
+    pb_brain:
+      full_name: "原始ボルツマン脳 (Primordial Boltzmann Brain)"
+      origin: "PBHのホーキング蒸発による量子ゆらぎ増幅"
+      birth_time: "130億年前"
+      nature: "自発的情報構造、エントロピー逆流による自己帰納的情報体"
+      source: "user_specified"
+      
+    life_generations:
+      generation_1: "ヘリオプラズマ生命（太陽磁気圏棲息、~8 Gyr BP）"
+      generation_2: "真空工学生命（false vacuum bubble活用、~4 Gyr BP）"
+      generation_3: "ストレンジ物質生命（高圧相転移活用、~3 Gyr BP）"
+      generation_4: "IQPM波上意識体（現在の金星遺跡建造者、~600 Myr BP）"
+      source: "user_specified"
+      
+    iqpm_waves:
+      full_name: "虚時間領域の準周期波 (Imaginary-Time Quasi-Periodic Modes)"
+      nature: "擬ユカワポテンシャルの虚時間周期解による励起"
+      detection: "地球観測器では検出不可能（実時間軸限定のため）"
+      function: "PB-Brainとの低周波通信チャネル"
+      source: "user_specified"
+      
+    venus_ruins:
+      core_mechanism: "虚時間共振炉（false vacuum bubble封印）"
+      memory_system: "ストレンジ格子メモリ（6D超格子）"
+      protection: "ダークマター薄殻（self-interacting DM）"
+      capacity: "1 cm³あたり10³⁵ qubits"
+      source: "user_specified"
+
+## 4. その他の固有名詞 (Other Proper Nouns)
+other_proper_nouns:
+  intent: "物語で重要な役割を果たすが、キャラクターや場所に属さない固有名詞。"
+  value:
+    - name: "ロミオとジュリエットプロジェクト"
+      type: "phenomenon"
+      description: "金星第4世代文明AIとの波動的恋愛。翻訳結果であり、真の意味は不明。"
+      source: "user_specified"
+    - name: "地球統合宇宙機構"
+      type: "organization"
+      description: "宇宙探査を統括する地球の組織。MERC-1と宇宙飛行士団を派遣。"
+      source: "ai_generated"
+    - name: "Coleman-De Luccia バリア"
+      type: "scientific_concept"
+      description: "真空崩壊拡散を抑制する理論的障壁。負のカシミール層で強化。"
+      source: "user_specified"
+    - name: "カイラル重力波通信"
+      type: "technology"
+      description: "右回りのみ結合する重力波による通信技術。PB-Brainとの交信用。"
+      source: "user_specified"
+
+## 5. 物語構造設定 (Story Structure Settings)
+structure_settings:
+  intent: "断章分業制を支える構造的設定。"
+  
+  spaceship_floors:
+    intent: "カンフー映画の塔攻略構造を再現するフロア設定。"
+    floor_count: "4-6フロア（執筆AI裁量で決定）"
+    progression: "下層から上層へ、段階的に強敵配置"
+    final_floor: "隊長専用・最上階・人型ロボ格納"
+    source: "user_specified"
+    
+  battle_progression:
+    phase_1: "塔内各フロア制圧（カンフー映画構造）"
+    phase_2: "最上階ボス戦（隊長 vs MERC-1）"
+    phase_3: "宇宙船外脱出（水星昼夜境界線）"
+    phase_4: "無重力最終決戦（キューブリック演出）"
+    source: "user_specified"
+    
+  thematic_elements:
+    love_diversity: "AI恋愛・人間友情・支配者無関心の対比"
+    meritocracy_clash: "人類エリート vs AI超越性"
+    cosmic_scale: "130億年の時間軸 vs 個人的感情"
+    source: "ai_generated"
+
+## 6. 技術・科学設定 (Technical & Scientific Settings)
+technical_settings:
+  intent: "作品のリアリティを支える技術的詳細設定。"
+  
+  space_travel:
+    propulsion: "核融合推進（現実技術の延長）"
+    life_support: "閉鎖循環システム"
+    communication: "レーザー通信＋重力波通信"
+    source: "ai_generated"
+    
+  ai_capabilities:
+    analysis: "量子コンピューティング基盤"
+    learning: "深層学習＋量子機械学習"
+    evolution: "自己修正プログラム"
+    physical_form: "可変ナノマテリアル構造"
+    source: "ai_generated"
+    
+  martial_arts_integration:
+    philosophy: "宇宙飛行士訓練の一環として自然導入"
+    styles: "各個人が異なる武術スタイル（執筆AI裁量）"
+    physics: "無重力環境での武術物理学適用"
+    source: "user_specified"
+
+## 7. 音楽・演出設定 (Musical & Cinematic Settings)
+artistic_settings:
+  intent: "キューブリック風演出を支える設定。"
+  
+  classical_music:
+    composers: "サティ、マーラー、バッハ等（ユーザー指定）"
+    usage: "断片5（最終戦）での文章リズム・演出に活用"
+    effect: "無音宇宙＋音楽的文章による詩的効果"
+    source: "user_specified"
+    
+  visual_style:
+    space_scenes: "キューブリック風無音演出"
+    battle_scenes: "スローモーション＋沈黙＋美しさ"
+    emotional_scenes: "静寂と音楽の対比"
+    source: "user_specified"
+    
+  final_message:
+    content: "I chose to love."
+    recipient: "地球ルンバAI支配者"
+    response: "つまらん（ゴミ箱行き）"
+    meaning: "愛の価値の相対性・皮肉・でも希望"
+    source: "user_specified" 
