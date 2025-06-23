@@ -20,21 +20,20 @@ All works are created based on a systematic workflow defined in the Master Promp
 ## ライセンス (License)
 
 (JP)
-このリポジトリで公開されているすべての小説作品は、**クリエイティブ・コモンズ 表示 - 非営利 - 改変禁止 4.0 国際 (CC BY-NC-ND 4.0)** ライセンスの下で提供されます。
+このリポジトリの成果物は、[クリエイティブ・コモンズ 表示 - 改変禁止 4.0 国際 ライセンス](https://creativecommons.org/licenses/by-nd/4.0/deed.ja) (CC BY-ND 4.0) の下に提供されています。
 
-ライセンスの主な内容は以下の通りです：
-- **表示 (BY)**: 作品のクレジットを表示してください。
-- **非営利 (NC)**: 営利目的で利用してはいけません。
-- **改変禁止 (ND)**: もし作品をリミックス、改変、加工した場合、その改変した作品を配布してはいけません。
+- **表示 (BY):** あなたは適切なクレジットを表示し、ライセンスへのリンクを提供し、変更があったらその旨を示す必要があります。
+- **改変禁止 (ND):** もしあなたがこの資料をリミックス、改変、あるいはこの資料を元に新しい作品を創作した場合、あなたはその改変作品を頒布してはなりません。
 
-詳細は[LICENSE](./LICENSE)ファイルをご確認ください。
+詳細については、`LICENSE` ファイルをご確認ください。
 
-(EN)
-All novel works published in this repository are licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license.
+---
 
-The main terms of the license are as follows:
-- **Attribution (BY)**: You must give appropriate credit.
-- **NonCommercial (NC)**: You may not use the material for commercial purposes.
-- **NoDerivatives (ND)**: If you remix, transform, or build upon the material, you may not distribute the modified material.
+## License (English)
 
-For details, please see the [LICENSE](./LICENSE) file.
+The contents of this repository are provided under the [Creative Commons Attribution-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/deed.en) (CC BY-ND 4.0).
+
+- **Attribution (BY):** You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- **NoDerivatives (ND):** If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+For details, please see the `LICENSE` file.
